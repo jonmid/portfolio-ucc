@@ -6,6 +6,7 @@ import ui from './../assets/images/ui.svg';
 import serviceIcon1 from './../assets/images/service_icon_1.svg';
 import serviceIcon2 from './../assets/images/service_icon_2.svg';
 import serviceIcon3 from './../assets/images/service_icon_3.svg';
+import avatarDefault from './../assets/images/avatar-default.svg';
 
 export const HeaderData = {
   logo: {
@@ -101,6 +102,44 @@ export const ServiceData = {
       subTitle:
         'Al utilizar metodologías para planificar el proceso de diseño garantizamos que los productos finales sean lo mas eficiente para los usuarios.',
       orientation: 'left',
+    },
+  ],
+};
+
+export const ExperienceData = {
+  header: {
+    title: 'Nuestra experiencia en desarrollo de software',
+    subTitle:
+      'Una breve descripción de lo que hemos desarrollado para distintos clientes.',
+  },
+  items: [
+    {
+      id: 1,
+      icon: avatarDefault,
+      clientName: 'Hospital',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia cupiditate non dolorem, sapiente quas incidunt, nam saepe eveniet cum, nisi ex quam nulla enim omnis natus accusamus sit fugiat id.',
+    },
+    {
+      id: 2,
+      icon: avatarDefault,
+      clientName: 'Restaurante',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia cupiditate non dolorem, sapiente quas incidunt, nam saepe eveniet cum, nisi ex quam nulla enim omnis natus accusamus sit fugiat id.',
+    },
+    {
+      id: 3,
+      icon: avatarDefault,
+      clientName: 'Colegio',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia cupiditate non dolorem, sapiente quas incidunt, nam saepe eveniet cum, nisi ex quam nulla enim omnis natus accusamus sit fugiat id.',
+    },
+    {
+      id: 4,
+      icon: avatarDefault,
+      clientName: 'Alcaldia',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia cupiditate non dolorem, sapiente quas incidunt, nam saepe eveniet cum, nisi ex quam nulla enim omnis natus accusamus sit fugiat id.',
     },
   ],
 };

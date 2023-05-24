@@ -9,9 +9,18 @@ export const LayoutHeader = ({ children }) => {
 };
 
 export const LayoutHero = ({ children }) => {
-  return <main className='mx-auto max-w-[990px] lg:px-5'>{children}</main>;
+  return <div className='mx-auto max-w-[990px] lg:px-5'>{children}</div>;
 };
 
-export const Layout = ({ children }) => {
-  return <main className='mx-auto max-w-[990px]'>{children}</main>;
+export const Layout = ({ children, black = false }) => {
+  // return <main className='mx-auto max-w-[990px]'>{children}</main>;
+  return (
+    <div
+      className={`w-full pt-28 ${
+        black ? 'bg-app-black-901' : 'bg-app-black-900'
+      }`}
+    >
+      <main className='mx-auto max-w-[990px]'>{children}</main>
+    </div>
+  );
 };

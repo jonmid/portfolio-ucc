@@ -1,24 +1,24 @@
 import React from 'react';
 import { ServiceData } from '../data/data.js';
+import { Layout } from './../components/Layout';
+import TitleSection from './../components/TitleSection';
 import ItemService from './../components/ItemService';
 
 const Services = () => {
   return (
-    <section className='py-20'>
-      <aside className='flex flex-col items-center text-app-white'>
-        <h1 className='font-semibold text-5xl'>{ServiceData.header.title}</h1>
-        <p className='mt-4 max-w-[705px] text-lg text-center'>
-          {ServiceData.header.subTitle}
-        </p>
-      </aside>
-      <section>
-        <ul className='flex flex-col items-center pt-[80px] gap-y-[80px]'>
+    <Layout>
+      <TitleSection
+        title={ServiceData.header.title}
+        subTitle={ServiceData.header.subTitle}
+      />
+      <section className='mb-28'>
+        <ul className='flex flex-col px-4 pt-[80px] gap-y-[80px] lg:px-0'>
           {ServiceData.items.map((item) => (
-            <ItemService data={item} />
+            <ItemService key={item.id} data={item} />
           ))}
         </ul>
       </section>
-    </section>
+    </Layout>
   );
 };
 
